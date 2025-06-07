@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cine Fantástico</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+
+        <!-- HEADER -->
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <img src="imagenes/logo.png" alt="Logo Cine Fantástico" />
+                </div>
+                <h2 class="cine-nombre">Cine Fantástico</h2>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html"><i
+                                    class="fa-solid fa-house"></i>
+                                Inicio</a></li>
+                        <li><a href="peliculas.html"><i
+                                    class="fa-solid fa-film"></i>
+                                Películas</a></li>
+                        <li><a href="series.html"><i class="fa-solid fa-tv"></i>
+                                Series</a></li>
+                        <li><a href="contactato.html"><i
+                                    class="fa-solid fa-envelope"></i>
+                                Contáctanos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <div class="contacto-titulo">
+                <h2>Contáctanos</h2>
+            </div>
+            <div class="contacto-contenedor">
+                <!-- Formulario -->
+                <form class="contacto-formulario">
+                    <div class="form-grupo">
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo"
+                            required />
+                    </div>
+                    <div class="form-grupo">
+                        <label for="telefono">Celular:</label>
+                        <input type="tel" id="telefono" name="telefono"
+                            required />
+                    </div>
+                    <div class="form-grupo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5"
+                            required></textarea>
+                    </div>
+                    <div class="form-grupo">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+
+                <!-- Mapa -->
+                <div class="mapa-contenedor">
+                    <p class="mapa-texto">Netflix disponible en Cotuí, al lado
+                        de la Iglesia Inmaculada Concepción</p>
+                    <iframe class="contacto-mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.0640229692145!2d-69.931211524386!3d18.467979982614053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea569b011c66483%3A0xa4ea8c95ea8e8c62!2sSanto%20Domingo!5e0!3m2!1ses!2sdo!4v1688392101120"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Inicio</a>
+                <a href="peliculas.html">Películas</a>
+                <a href="series.html">Series</a>
+                <a href="contacto.html">contactatanos</a>
+            </nav>
+        </footer>
+
+        <!-- SUBFOOTER -->
+        <div class="sub-footer">
+            <p>Derechos Reservados | Diseñado por Elba Rodriguez</p>
+        </div>
+
+    </body>
+</html>

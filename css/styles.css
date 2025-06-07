@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    background-color: rgb(218, 60, 60);
+    padding: 10px;
+    height: 60px;
+    min-height: 50px;
+    position: relative;
+    margin-right: 5px;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+   
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 500px;
+    
+}
+
+.menu ul {
+    display: flex;
+    /* Los elementos estarán uno al lado del otro */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 0 8px;
+   
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+
+.menu-header {
+    display: flex;
+    justify-content: flex-end;
+  
+    align-items: center;
+}
+
+.menu-header ul {
+
+    display: flex;
+    /* Coloca los elementos en línea */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-header ul li {
+    margin: 10px;
+  
+}
+
+.menu-header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+}
+
+
+/* Contenedor de imágenes */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contáctanos */
+.contacto-titulo {
+    text-align: left;
+    margin-bottom: 15px;
+    padding-left: 100px;
+}
+.contacto-titulo h2,
+label,
+.mapa-texto,
+input,
+textarea {
+    color: black;
+}
+
+.contacto-titulo h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Contenedor */
+.contacto-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+}
+
+/* Formulario */
+.contacto-formulario {
+    flex: 1;
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.form-grupo {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 6px;
+    margin-top: 2px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    padding: 8px;
+}
+
+/* Botón de envío */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #002244;
+}
+
+.mapa-contenedor {
+  flex: 1;
+  position: relative;
+  max-width: 600px;
+  height: 370px; 
+  margin-right: 60px;
+}
+
+.contacto-mapa {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.mapa-texto {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 21px 13px; 
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  max-width: 237px; 
+}
+
+
+.contacto-mapa {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer-secundario {
+    background-color: #aca4a4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Organiza redes sociales encima del menú */
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2px; /* antes estaba en 20px */
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+    color: #1a73e8;
+}
+
+footer {
+    background-color: #aca4a4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #1a73e8;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.sub-footer {
+    background-color: #312b2b;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
